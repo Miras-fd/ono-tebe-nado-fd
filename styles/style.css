@@ -19,7 +19,7 @@
 list-style: none;
 }
 
-.header__link{
+.header__link {
   color: black;
   text-decoration: underline;
 }
@@ -50,7 +50,7 @@ text-decoration: none;
 
 .cover {
  position: relative;
- min-height: 757px; 
+ min-height: 757px;
  background-image: url(../images/cover.jpg);
  background-size: cover;
  background-position: center;
@@ -263,7 +263,7 @@ margin-bottom: 100px;
   align-items: start;
 }
 
-.footer__address{
+.footer__address {
   max-width: 240px;
 }
 
