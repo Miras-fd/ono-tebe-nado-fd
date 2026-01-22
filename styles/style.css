@@ -19,7 +19,7 @@
 list-style: none;
 }
 
-.header__link{
+.header__link {
   color: black;
   text-decoration: underline;
 }
@@ -266,7 +266,7 @@ margin-bottom: 100px;
   align-items: start;
 }
 
-.footer__address{
+.footer__address {
   max-width: 240px;
 }
 
