@@ -25,7 +25,7 @@
 list-style: none;
 }
 
-.header__link{
+.header__link {
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -295,7 +295,7 @@ margin-bottom: 100px;
   align-items: start;
 }
 
-.footer__address{
+.footer__address {
   max-width: 240px;
 }
 
