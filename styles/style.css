@@ -107,6 +107,7 @@
 
 .aligned-text {
   display: block;
+  letter-spacing: 0.6em;
 }
 
 .aligned-text_center {
