@@ -115,14 +115,13 @@ body {
   font-size: 100px;
   line-height: 115px;
   text-transform: uppercase;
-  letter-spacing: normal;
+  letter-spacing: 0.3em;
   margin: 0 0 135px 0;
   z-index: 2;
 }
 
 .aligned-text {
   display: block;
-  letter-spacing: 0.3em;
 }
 
 .aligned-text_center {
@@ -210,6 +209,7 @@ body {
   height: 100%;
   position: relative;
   min-height: 563px;
+  box-sizing: border-box;
   padding-top: 51px;
   padding-left: 40px;
   padding-right: 40px;
@@ -303,6 +303,7 @@ body {
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 40px;
   text-transform: uppercase;
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 
