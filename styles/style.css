@@ -1,9 +1,15 @@
+::before,
+::after {
+  box-sizing: border-box;
+}
+
 body {
-  margin:0;
+  margin: 0;
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 16px;
   line-height: 1.2;
 }
+
 
 .page {
   max-width: 1100px;
@@ -14,7 +20,7 @@ body {
 
 .header {
   display: grid;
-  grid-template-columns: 1fr min-content 1fr;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding-top: 92px;
   padding-bottom: 92px;
@@ -48,6 +54,8 @@ body {
 
 .header__logo {
   width: 148px;
+  display: block;
+  justify-self: center;
 }
 
 /*  АДРЕС  */
@@ -76,7 +84,7 @@ body {
   max-width: 240px;
 }
 
-/* ОБЛОЖКА */
+/*  ОБЛОЖКА  */
 
 .cover {
   position: relative;
@@ -107,14 +115,14 @@ body {
   font-size: 100px;
   line-height: 115px;
   text-transform: uppercase;
-  letter-spacing: 0.3em;
+  letter-spacing: normal;
   margin: 0 0 135px 0;
   z-index: 2;
 }
 
 .aligned-text {
   display: block;
-  letter-spacing: 0.6em;
+  letter-spacing: 0.3em;
 }
 
 .aligned-text_center {
@@ -254,7 +262,7 @@ body {
   margin: 0;
 }
 
-/* Ссылка */
+/*  Ссылка  */
 
 .lots__look-more-link {
   font-family: 'Raleway', Arial, sans-serif;
@@ -263,7 +271,7 @@ body {
   text-decoration: underline;
 }
 
-/* ОБ АУКЦИОНЕ  */
+/*  ОБ АУКЦИОНЕ  */
 
 .about {
   display: grid;
@@ -310,7 +318,7 @@ body {
   margin: 0;
 }
 
-/*  Подвал сайта */
+/*  Подвал Сайта */
 
 .footer {
   display: grid;
