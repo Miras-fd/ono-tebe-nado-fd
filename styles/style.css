@@ -1,6 +1,26 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
 .page {
  max-width: 1100px;
  margin: 0 auto;
+ padding-left: 50px;
+ padding-right: 50px;
 }
 
 /* шапка */
@@ -11,19 +31,18 @@
   align-items: center;
   padding-top: 92px;
   padding-bottom: 92px;
-  padding-left: 50px;
-  padding-right: 50px;
+   /* боковые паддинги вынесены в блок .page */
 }
 
 .header__links-list {
   display: flex;
   gap: 32px;
-  list-style: circle;
+  list-style: none;
   margin:0;
   padding: 0;
 }
 
-.header__links-list-item_no-bullit {
+.header__links-list-item_no-bullet {
 list-style: none;
 }
 
@@ -33,6 +52,7 @@ list-style: none;
   line-height: 21px;
   color: black;
   text-decoration: underline;
+  display: inline-block;
 }
 
 .header__link_active {
@@ -74,14 +94,12 @@ text-decoration: none;
 .cover {
   position: relative;
   min-height: 757px;
-  box-sizing: border-box;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 165px;
-  padding-left: 50px;
-  padding-right: 50px;
   padding-bottom: 50px;
+  /* боковые паддинги вынесены в блок .page */
 }
 
 .overlay {
@@ -103,6 +121,7 @@ text-decoration: none;
   letter-spacing: 0.3em;
   margin: 0 0 135px 0;
   z-index: 2;
+  word-break: break-word;
 }
 
 .aligned-text {
@@ -127,6 +146,7 @@ text-decoration: none;
   margin-top: auto;
   padding-bottom: 10px;
   z-index: 2;
+  gap: 20px;
 }
 
 .cover__description-text {
@@ -144,10 +164,7 @@ text-decoration: none;
   color: white;
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 22px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 12px 32px; /* сократил запись, код тот же*/
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -156,9 +173,8 @@ text-decoration: none;
 
 .lots {
   padding-top: 180px;
-  padding-left: 50px;
-  padding-right: 50px;
   padding-bottom: 50px;
+  /* боковые паддинги вынесены в блок .page */
 }
 
 .lots__heading {
@@ -194,10 +210,7 @@ text-decoration: none;
   height: 100%;
   position: relative;
   min-height: 563px;
-  padding-top: 51px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 48px;
+  padding: 51px 40px 48px 40px; /* сократил запись, код тот же*/
   background-size: cover;
   background-position: center;
   display: flex;
@@ -261,7 +274,7 @@ text-decoration: none;
   display: grid;
   grid-template-columns: 334px 1fr;
   gap: 25px;
-  padding: 180px 50px 50px;
+  padding: 180px 0 50px; /* боковые паддинги вынесены в блок .page */
 }
 
 .about__column {
@@ -307,7 +320,7 @@ width: 148px;
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 180px 50px 90px;
+  padding: 180px 0 90px; /* боковые паддинги вынесены в блок .page */
   align-items: start;
 }
 
