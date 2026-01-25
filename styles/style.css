@@ -17,10 +17,8 @@ h1, h2, h3, p, ul, li {
 }
 
 .page {
- max-width: 1100px;
- margin: 0 auto;
- padding-left: 50px;
- padding-right: 50px;
+  width: 1100px;
+  margin: 0 auto;
 }
 
 /* шапка */
@@ -31,7 +29,8 @@ h1, h2, h3, p, ul, li {
   align-items: center;
   padding-top: 92px;
   padding-bottom: 92px;
-   /* боковые паддинги вынесены в блок .page */
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .header__links-list {
@@ -94,12 +93,14 @@ text-decoration: none;
 .cover {
   position: relative;
   min-height: 757px;
+  box-sizing: border-box;
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 165px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-bottom: 50px;
-  /* боковые паддинги вынесены в блок .page */
 }
 
 .overlay {
@@ -173,8 +174,9 @@ text-decoration: none;
 
 .lots {
   padding-top: 180px;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-bottom: 50px;
-  /* боковые паддинги вынесены в блок .page */
 }
 
 .lots__heading {
@@ -274,7 +276,7 @@ text-decoration: none;
   display: grid;
   grid-template-columns: 334px 1fr;
   gap: 25px;
-  padding: 180px 0 50px; /* боковые паддинги вынесены в блок .page */
+  padding: 180px 50px 50px;
 }
 
 .about__column {
@@ -320,7 +322,7 @@ width: 148px;
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 180px 0 90px; /* боковые паддинги вынесены в блок .page */
+  padding: 180px 50px 90px;
   align-items: start;
 }
 
