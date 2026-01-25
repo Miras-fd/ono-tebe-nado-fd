@@ -123,6 +123,7 @@ text-decoration: none;
   margin: 0 0 135px 0;
   z-index: 2;
   word-break: break-word;
+  padding-left: 40px;
 }
 
 .aligned-text {
@@ -183,13 +184,14 @@ text-decoration: none;
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 40px;
   text-transform: uppercase;
-  margin: 0 0 27px 40px;
+  margin: 0 0 27px 32px;
 }
 
 .lots__card-list {
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
+  align-items: flex-start;
   list-style: none;
   margin: 0;
   margin-bottom: 30px;
@@ -322,7 +324,7 @@ width: 148px;
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 180px 50px 90px;
+  padding: 180px 50px 94px;
   align-items: start;
 }
 
