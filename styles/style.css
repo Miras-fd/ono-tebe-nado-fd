@@ -106,7 +106,7 @@ text-decoration: none;
 .overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.62);
   z-index: 1;
 }
 
@@ -224,7 +224,7 @@ text-decoration: none;
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0,0,0,.6);
+  background-color: rgba(0,0,0,0.62);
 }
 
 .card_type_film {
