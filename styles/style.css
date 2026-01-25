@@ -1,31 +1,13 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: 'Raleway', Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.2;
-}
-
-h1, h2, h3, p, ul, li {
-  margin: 0;
-  padding: 0;
-}
-
 .page {
-  width: 1100px;
-  margin: 0 auto;
+ max-width: 1100px;
+ margin: 0 auto;
 }
 
-/* ШАПКА */
+/* шапка */
 
 .header {
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding-top: 92px;
   padding-bottom: 92px;
@@ -37,12 +19,12 @@ h1, h2, h3, p, ul, li {
   display: flex;
   gap: 32px;
   list-style: circle;
-  margin: 0;
+  margin:0;
   padding: 0;
 }
 
 .header__links-list-item_no-bullit {
-  list-style: none;
+list-style: none;
 }
 
 .header__link {
@@ -54,16 +36,14 @@ h1, h2, h3, p, ul, li {
 }
 
 .header__link_active {
-  text-decoration: none;
+text-decoration: none;
 }
 
 .header__logo {
   width: 148px;
-  display: block;
-  justify-self: center;
 }
 
-/*  АДРЕС  */
+/* адрес*/
 
 .address {
   display: flex;
@@ -89,11 +69,11 @@ h1, h2, h3, p, ul, li {
   max-width: 240px;
 }
 
-/*  ОБЛОЖКА  */
+/* обложка */
 
 .cover {
   position: relative;
-  height: 757px;
+  min-height: 757px;
   box-sizing: border-box;
   background-image: url(../images/cover.jpg);
   background-size: cover;
@@ -111,7 +91,7 @@ h1, h2, h3, p, ul, li {
   z-index: 1;
 }
 
-/*  Заголовок  */
+/* заголовок*/
 
 .cover__title {
   position: relative;
@@ -137,7 +117,7 @@ h1, h2, h3, p, ul, li {
   text-align: right;
 }
 
-/*  Описание текста и кнопка  */
+/* описание текста и кнопка*/
 
 .cover__description {
   position: relative;
@@ -145,7 +125,7 @@ h1, h2, h3, p, ul, li {
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
   z-index: 2;
 }
 
@@ -172,7 +152,7 @@ h1, h2, h3, p, ul, li {
   cursor: pointer;
 }
 
-/*  ЛОТЫ  */
+/* лоты */
 
 .lots {
   padding-top: 180px;
@@ -185,7 +165,7 @@ h1, h2, h3, p, ul, li {
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 40px;
   text-transform: uppercase;
-  margin: 0 0 30px 40px;
+  margin: 0 0 27px 40px;
 }
 
 .lots__card-list {
@@ -199,11 +179,11 @@ h1, h2, h3, p, ul, li {
 }
 
 .lots__card-list-item {
-  width: calc((100% - 50px) / 3);
+  width: calc((100% - 50px)/3);
   min-height: 563px;
 }
 
-/*  КАРТОЧКИ  */
+/* карточка */
 
 .card-link {
   text-decoration: none;
@@ -214,7 +194,6 @@ h1, h2, h3, p, ul, li {
   height: 100%;
   position: relative;
   min-height: 563px;
-  box-sizing: border-box;
   padding-top: 51px;
   padding-left: 40px;
   padding-right: 40px;
@@ -230,7 +209,7 @@ h1, h2, h3, p, ul, li {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0,0,0,.6);
 }
 
 .card_type_film {
@@ -267,7 +246,7 @@ h1, h2, h3, p, ul, li {
   margin: 0;
 }
 
-/*  Ссылка  */
+/* ===== ссылка ===== */
 
 .lots__look-more-link {
   font-family: 'Raleway', Arial, sans-serif;
@@ -276,7 +255,7 @@ h1, h2, h3, p, ul, li {
   text-decoration: underline;
 }
 
-/*  ОБ АУКЦИОНЕ  */
+/* об аукционе */
 
 .about {
   display: grid;
@@ -301,7 +280,7 @@ h1, h2, h3, p, ul, li {
 }
 
 .about__logo-image {
-  width: 148px;
+width: 148px;
 }
 
 .about__title {
@@ -323,7 +302,7 @@ h1, h2, h3, p, ul, li {
   margin: 0;
 }
 
-/*  Подвал Сайта */
+/* подвал сайта */
 
 .footer {
   display: grid;
