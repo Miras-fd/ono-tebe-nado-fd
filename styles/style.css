@@ -4,15 +4,15 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 50px;
+  padding: 92px 53.9px;
 }
 
 .header__links-list {
   display: flex;
   flex-direction: row;
-  gap: 32px;
+  gap: 30px;
   list-style: circle;
-  padding-left: 20px;
+  padding-left: 0;
 }
 
 
@@ -34,7 +34,7 @@
 }
 
 .header__logo {
-  width: 148px;
+  width: 135px;
 }
 
 /*  адрес  */
@@ -45,7 +45,7 @@
   align-items: flex-start;
   font-size: 18px;
   font-style: normal;
-  line-height: 24px;
+  line-height: 25px;
   color: black;
 }
 
@@ -70,7 +70,7 @@
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-position: center;
-  padding: 165px 50px 50px;
+  padding: 180px 50px 50px;
 }
 
 .overlay {
@@ -142,8 +142,7 @@
   margin: 0 0 27px 40px;
   font-size: 40px;
   text-transform: uppercase;
-  text-decoration: none;
-  margin-bottom: 27px;
+  text-decoration: none;;
 }
 
 .lots__card-list {
@@ -169,7 +168,7 @@
 .card {
   position: relative;
   min-height: 563px;
-  padding: 51px 40px 48px;
+  padding: 51px 32px 48px;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -227,7 +226,7 @@
 
 .about {
   display: grid;
-  grid-template-columns: 334px 1fr;
+  grid-template-columns: 310px 1fr;
   gap: 25px;
   padding: 180px 50px 50px;
 }
@@ -269,7 +268,7 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 180px 50px 90px;
+  padding: 185px 50px 90px;
   align-items: start;
 }
 
