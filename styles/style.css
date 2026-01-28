@@ -23,7 +23,11 @@
   padding: 0;
 }
 
-.header__links-list-item_no-bullit {
+.header__links-list-item {
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullet {
 list-style: none;
 }
 
@@ -41,6 +45,13 @@ text-decoration: none;
 
 .header__logo {
   width: 148px;
+  justify-self: center;
+  display: block;
+}
+
+.header__logo-image {
+  width: 100%;
+  display: block;
 }
 
 /* адрес*/
@@ -126,7 +137,7 @@ text-decoration: none;
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
-  padding-bottom: 10px;
+  padding-bottom: 0;
   z-index: 2;
 }
 
@@ -136,14 +147,17 @@ text-decoration: none;
   color: white;
   font-size: 22px;
   line-height: 28px;
-  letter-spacing: 1px;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  margin: 0;
 }
 
 .bet-button {
   background-color: transparent;
   border: 1px solid white;
   color: white;
-  font-family: 'Raleway', Arial, sans-srif;
+  font-family: 'Raleway', Arial, sans-serif;
+  line-height: 1;
   font-size: 22px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -170,17 +184,15 @@ text-decoration: none;
 }
 
 .lots__card-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);;
   gap: 25px;
-  flex-wrap: wrap;
   list-style: none;
-  margin: 0;
-  margin-bottom: 30px;
-  padding-left: 0;
+  margin: 0 0 30px;
+  padding: 0;
 }
 
 .lots__card-list-item {
-  width: calc((100% - 50px)/3);
   min-height: 563px;
 }
 
@@ -211,6 +223,7 @@ text-decoration: none;
   position: absolute;
   inset: 0;
   background-color: rgba(0,0,0,.6);
+  z-index: 1;
 }
 
 .card_type_film {
@@ -266,6 +279,10 @@ text-decoration: none;
   padding: 180px 50px 50px;
 }
 
+.about__column:first-child {
+  justify-self: center;
+}
+
 .about__column {
   display: flex;
   flex-direction: column;
@@ -289,7 +306,7 @@ width: 148px;
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 40px;
   text-transform: uppercase;
-  margin-bottom: 100px;
+  margin-bottom: 100px 0 100px;
 }
 
 .about__text {
@@ -298,6 +315,7 @@ width: 148px;
   gap: 25px;
   font-family: 'Raleway', Arial, sans-serif;
   font-size: 20px;
+  line-height: 24px;
 }
 
 .about__text p {
@@ -345,7 +363,6 @@ width: 148px;
   padding: 0;
   margin: 0;
   display: flex;
-  justify-self: flex-end;
   gap: 48px;
 }
 
