@@ -1,3 +1,8 @@
+.page {
+ max-width: 1100px;
+ margin: 0 auto;
+}
+
 /* шапка */
 
 .header {
@@ -67,18 +72,15 @@ text-decoration: none;
 /* обложка */
 
 .cover {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  position: relative;
-  min-height: 757px;
-  background-image: url(../images/cover.jpg);
-  background-size: cover;
-  background-position: center;
-  padding-top: 165px;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
+ position: relative;
+ min-height: 757px;
+ background-image: url(../images/cover.jpg);
+ background-size: cover;
+ background-position: center;
+ padding-top: 165px;
+ padding-left: 50px;
+ padding-right: 50px;
+ padding-bottom: 50px;
 }
 
 .overlay {
@@ -97,8 +99,8 @@ text-decoration: none;
   font-size: 100px;
   line-height: 115px;
   text-transform: uppercase;
-  letter-spacing: 0.3em;
-  margin: 0 0 135px 0;
+  letter-spacing: 0.03em;
+  margin: 0 0 20px 0;
   z-index: 2;
 }
 
@@ -122,7 +124,7 @@ text-decoration: none;
   justify-content: space-between;
   align-items: center;
   margin-top: auto;
-  padding-bottom:10px;
+  padding-bottom: 10px;
   z-index: 2;
 }
 
@@ -132,18 +134,18 @@ text-decoration: none;
   color: white;
   font-size: 22px;
   line-height: 28px;
-  letter-spacing: 0%;
+  letter-spacing: 1px;
 }
 
 .bet-button {
   background-color: transparent;
   border: 1px solid white;
   color: white;
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: 'Raleway', Arial, sans-srif;
   font-size: 22px;
   padding-top: 12px;
-  padding-bottom: 11px;
-  padding-left: 31px;
+  padding-bottom: 12px;
+  padding-left: 32px;
   padding-right: 32px;
   text-transform: uppercase;
   cursor: pointer;
@@ -153,9 +155,9 @@ text-decoration: none;
 
 .lots {
   padding-top: 180px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 155px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
 }
 
 .lots__heading {
@@ -171,7 +173,7 @@ text-decoration: none;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  margin-bottom: 64px;
+  margin-bottom: 30px;
   padding-left: 0;
 }
 
@@ -188,9 +190,10 @@ text-decoration: none;
 }
 
 .card {
+  height: 100%;
   position: relative;
   min-height: 563px;
-  padding-top: 48px;
+  padding-top: 51px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 48px;
@@ -199,7 +202,7 @@ text-decoration: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- }
+}
 
 .card::before {
   content: "";
@@ -230,7 +233,6 @@ text-decoration: none;
   text-transform: uppercase;
   text-decoration: underline;
   margin: 0;
-  margin-bottom: 12px;
 }
 
 .card__text {
@@ -250,7 +252,6 @@ text-decoration: none;
   color: black;
   font-size: 20px;
   text-decoration: underline;
-  margin-left: 40px;
 }
 
 /* об аукционе */
@@ -259,7 +260,7 @@ text-decoration: none;
   display: grid;
   grid-template-columns: 334px 1fr;
   gap: 25px;
-  margin: 0 24px 180px;
+  padding: 180px 50px 50px;
 }
 
 .about__column {
@@ -305,7 +306,7 @@ width: 148px;
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 180px 50px 50px;
+  padding: 180px 50px 90px;
   align-items: start;
 }
 
