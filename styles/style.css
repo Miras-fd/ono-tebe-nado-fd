@@ -35,7 +35,7 @@ text-decoration: none;
 }
 
 .header__logo {
-  width: 148px;
+  width: 136px;
 }
 
 /* адрес*/
@@ -273,7 +273,7 @@ text-decoration: none;
   display: grid;
   grid-template-columns: 334px 1fr;
   gap: 25px;
-  padding: 180px 50px 50px;
+  padding-top: 120px;
 }
 
 .about__column {
